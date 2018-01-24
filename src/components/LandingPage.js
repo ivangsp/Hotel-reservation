@@ -52,8 +52,8 @@ class LandingPage extends  Component {
 
                                <div className="form-row">
                                    <div className="form-group col-md-12">
-                                       <label for="exampleInputPassword1" className="label">Rooms</label>
-                                       <input type="numeric" className="form-control" value="1" id="exampleInputPassword1" />
+                                       <label > <i className="fa fa-bed pr-1" aria-hidden="true"></i>Rooms</label>
+                                       <input type="numeric" className="form-control" value="1" />
                                    </div>
                                </div>
 

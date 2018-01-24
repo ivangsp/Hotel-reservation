@@ -28,7 +28,7 @@
 }
 
 .landingpage-img{
-  background-image: url("./images/hotel-bg.jpg");
+  background-image: url("../images/hotel-bg.jpg");
   height: 500px;
 }
 .reservation-dialog{

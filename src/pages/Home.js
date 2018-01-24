@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../css/App.css';
 
-import NavBar from './NavBar';
-import LandingPage from './LandingPage'
-import Rooms from './Rooms'
-import Footer from './Footer'
+import NavBar from '../components/NavBar';
+import LandingPage from '../components/LandingPage'
+import Rooms from '../components/Rooms'
+import Footer from '../components/Footer'
 class Home extends Component {
     render() {
         return (
