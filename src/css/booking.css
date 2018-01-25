@@ -1,0 +1,85 @@
+.mainContainer{
+    /*background-color: #E8DDCB;*/
+}
+
+.container1{
+
+    margin-bottom: 10px;
+    border: 1px solid #E8DDCB;
+}
+
+.btn-booking{
+    background-color: #854141
+}
+
+.hd-bgcolor{
+    background-color: #F8F8F8;
+    font-weight: bold;
+}
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.rooms-img{
+    width: 100%;
+    height: auto;
+}
+.fa{
+    background-color: #ffffff;
+
+}
+.fa-check-square{
+    color: green;
+}
+.customHr {
+   border-top: 1px solid grey;
+    height: 5px;
+}
+.icon-bed{
+    font-size: 100px;
+}
+.summary{
+    background-color: #F9F9F9;
+    border: 1px solid #E8DDCB;
+    color:#6F6F6F;
+}
+
+.fa-bed{
+    background-color: #F9F9F9;
+    color:#6F6F6F;
+}
+.selection{
+    /*background-color: #DED3C2;*/
+    color: cadetblue;
+}
+.selected-date{
+    background-color: #F8F8F8;
+}
+
+.react-datepicker__input-container
+input{
+    background-color: whitesmoke;
+    width: 120px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    border: 1px solid #155724;
+    height: 33px;
+    border-radius: 0.2rem;
+}
+
+.no-rooms
+.form-control{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    width: 50px;
+    border: 1px solid #155724;
+    background-color: #F8F8F8;
+
+}
+
+
+
+
+

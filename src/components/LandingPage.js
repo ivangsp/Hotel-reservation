@@ -1,59 +1,42 @@
 import React, { Component } from 'react';
-import DatePicker from 'react-datepicker';
+import {Link} from 'react-router-dom'
+import Datepicker from '../components/Datepicker'
 import moment from 'moment';
 
-import 'react-datepicker/dist/react-datepicker.css';
+import  FormSelection from '../components/Form-selection'
 
 class LandingPage extends  Component {
 
     constructor(props){
-        super(props)
-        this.state = {
-            startDate: moment(),
-            endDate: moment()
-        };
+        super(props);
 
-        this.handleChange = this.handleChange.bind(this);
-
-    }
-
-    handleChange(date) {
-        this.setState({
-            startDate: date,
-        });
     }
 
     render(){
         return(
             <div className="container-fluid landingpage-img">
                 <div className="row">
-                    <div className="col-md-3 offset-md-1 ">
-                        <div className="col-md-12 mgn0"><p className="btn btn-danger header-dialog">Make a Reservation </p> </div>
+                    <div className="col-md-3 offset-md-1 mt-5 ">
                        <div className="reservation-dialog">
                            <form >
-                             <div className="form-row">
-                                 <div className="col-md-6">
-                                     <label><i class="fa fa-calendar-o"></i> Check In</label>
-                                     <DatePicker
-                                         dateFormat="DD-MM-YYYY"
-                                         selected={this.state.startDate}
-                                         onChange={this.handleChange}
-                                     />
-                                     {/*<input type="text" className="form-control" id="exampleInputEmail1" />*/}
+                             <div className="form-row row">
+                                 <div className="col-md-6 col-xs-6">
+                                     <label><i class="fa fa-calendar-o"></i> Check-in</label>
+                                     <Datepicker startDate={moment()} />
                                  </div>
-                                 <div className="col-md-6">
-                                     <label><i class="fa fa-calendar-o"></i> Check In</label>
-                                     <DatePicker
-                                         dateFormat="DD-MM-YYYY"
-                                         selected={this.state.endDate}
-                                         />
+                                 <div className="col-md-6 col-xs-6">
+                                     <label><i class="fa fa-calendar-o"></i> Check-out</label>
+                                     <Datepicker startDate={moment().add(1, "days")} />
                                  </div>
                              </div>
 
-                               <div className="form-row">
-                                   <div className="form-group col-md-12">
-                                       <label > <i className="fa fa-bed pr-1" aria-hidden="true"></i>Rooms</label>
-                                       <input type="numeric" className="form-control" value="1" />
+                               <div className="row mt-3 mb-2 col-sm-6">
+                                   <div className="col-md-6">
+                                      <p> <i className="fa fa-bed" aria-hidden="true"> </i><b className="pl-2">Rooms</b> </p>
+                                   </div>
+
+                                   <div className="col-md-6 col-sm-6" >
+                                       <FormSelection  val={1}/>
                                    </div>
                                </div>
 
@@ -70,10 +53,10 @@ class LandingPage extends  Component {
 
                                <div class="form-group col-md-12">
                                    <label for="exampleInputPassword1" className="label">Coupon Code</label>
-                                   <input type="numeric" value={0} class="form-control" id="exampleInputPassword1" />
+                                   <input type="numeric" value="" class="form-control" id="exampleInputPassword1" />
                                </div>
 
-                               <button type="submit" class="btn btn-danger header-dialog col-md-12">Book Now</button>
+                               <Link to="/booking" type="submit" class="btn btn-danger header-dialog col-md-12">Search</Link>
                            </form>
                        </div>
                     </div>

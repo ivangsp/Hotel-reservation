@@ -1,0 +1,75 @@
+
+.landingpage-img{
+    background-image: url("../images/hotel-bg.jpg");
+    height: 500px;
+}
+.reservation-dialog{
+    background-color: #EEEEEF;
+    border-top: 2px solid #A80000;
+    padding: 10px;
+}
+.header-dialog{
+    background-color: #A80000;
+    margin: 0px;
+
+}
+
+.reservation-dialog
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.reservation-dialog
+input{
+    line-height: 0.9;
+}
+#rooms{
+    background-color: #F1F1F1;
+}
+#rooms
+.row{
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+#rooms
+.card{
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: #353D42;
+    color: #ffffff;
+}
+
+.social-icon{
+    width: 10%;
+    height: auto;
+    padding: 5px;
+}
+
+.react-datepicker__input-container
+input{
+    background-color: whitesmoke;
+    width: 120px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    border: 1px solid #155724;
+
+}
+.reservation-dialog
+.form-control {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    width: 60px;
+    border: 1px solid #155724;
+
+}
+.fa
+.fa-bed{
+    background-color: #EDEDEF;
+}
