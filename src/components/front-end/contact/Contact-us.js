@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import NavBar from '../components/NavBar';
+import NavBar from '../NavBar';
 
-import Footer from '../components/Footer'
+import Footer from '../Footer'
 class Contact_us extends Component {
     render() {
         return (

@@ -7,11 +7,11 @@ class FormSelection extends Component{
 
     render(){
         return(
-            <select class="form-control form-control-sm">
+            <select className="form-control form-control-sm" onChange={(e) => this.props.handleChange(e.target.value)}>
                 <option>{this.props.val}</option>
-                <option value="1">2</option>
-                <option value="1">3</option>
-                <option value="1">4</option>
+                <option value={2}>2</option>
+                <option value={3}>3</option>
+                <option value={4}>4</option>
             </select>
         );
     }

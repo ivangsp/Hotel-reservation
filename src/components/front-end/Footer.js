@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import facebookicon from '../images/facebook-logo.svg'
-import  twittericon from '../images/twitter-logo.svg'
-import  histagram from  '../images/instagram-logo.svg'
+import facebookicon from '../../images/facebook-logo.svg'
+import  twittericon from '../../images/twitter-logo.svg'
+import  histagram from '../../images/instagram-logo.svg'
 
 
 class Footer extends Component {

@@ -24,10 +24,7 @@ img{
     width: 100%;
     height: auto;
 }
-.fa{
-    background-color: #ffffff;
 
-}
 .fa-check-square{
     color: green;
 }
@@ -77,6 +74,40 @@ input{
     border: 1px solid #155724;
     background-color: #F8F8F8;
 
+}
+
+.personal-details{
+    background-color: #F6F6F6;
+    padding-bottom: 2px;
+}
+
+.header-container{
+    background-color: #854141;
+    color: white;
+}
+.hrline{
+    border-bottom: 1px solid #F6F6F6;
+}
+.total-summary{
+    background-color: #F9F9F9;
+    border: 1px solid #E8DDCB;
+    color:#6F6F6F;
+
+}
+.total-summary
+.fa-bed{
+    color: forestgreen;
+    font-size: 100px;
+
+}
+.personal-details
+.list-group-item {
+    background-color: #f0f0f0;
+}
+
+.header-container
+.fa {
+    background-color: #844141;
 }
 
 

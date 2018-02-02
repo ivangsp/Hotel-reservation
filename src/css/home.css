@@ -8,11 +8,6 @@
     border-top: 2px solid #A80000;
     padding: 10px;
 }
-.header-dialog{
-    background-color: #A80000;
-    margin: 0px;
-
-}
 
 .reservation-dialog
 label{
@@ -24,6 +19,18 @@ label{
 input{
     line-height: 0.9;
 }
+.reservation-dialog
+.fa{
+    background-color: #EDEDEF;
+}
+
+.reservation-dialog
+.fa-bed{
+    background-color: #EDEDEF;
+    color: black;
+    font-size: 30px;
+}
+
 #rooms{
     background-color: #F1F1F1;
 }
@@ -40,8 +47,8 @@ input{
 }
 
 .footer{
-    background-color: #353D42;
-    color: #ffffff;
+    background-color: #eeeef0;
+    color: #212529;
 }
 
 .social-icon{
@@ -69,7 +76,6 @@ input{
     border: 1px solid #155724;
 
 }
-.fa
-.fa-bed{
-    background-color: #EDEDEF;
+.bg-light{
+    background-color: #ffffff;
 }
