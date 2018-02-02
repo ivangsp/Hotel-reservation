@@ -1,13 +1,37 @@
 import React, {Component} from 'react';
+import SweetAlert from 'react-bootstrap-sweetalert';
+
 class PaymentDetails extends Component{
     constructor(props){
         super(props);
+        this.state = {
+            submited: false
+        }
+    }
+
+    redirect(){
+        this.setState({submited: false});
+        window.location= '/'
     }
 
     render(){
         return(
             <div className="row mt-2 personal-details">
                 <div className="col-md-8 ">
+                    {this.state.submited ?
+
+                        <SweetAlert
+                            success title="Good job!"
+                            custom
+                            confirmBtnText="OK"
+                            confirmBtnBsStyle="primary"
+                            customIcon="thumbs-up.jpg"
+                            onConfirm={()=> this.redirect()}
+                            onCancel={this.hideAlert} >
+                            Thank you for paying, Your payment has been receivd
+                        </SweetAlert>
+                    : null}
+
                     <div className="card card-body personal-details ">
                         <p>Send MTN Money <b>Ush: 500000</b> to goods and service (others) options
                             <br/>
@@ -46,7 +70,7 @@ class PaymentDetails extends Component{
 
                             <div className="form-group">
                                 <button type="submit" className="btn btn-danger mb-2 btn-bgcolor"
-                                onClick={() => this.props.setPay(true)}>Complete</button>
+                                onClick={() => this.setState({submited: true})}>Complete</button>
                             </div>
                         </div>
                     </div>

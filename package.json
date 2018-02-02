@@ -6,6 +6,7 @@
     "history": "^4.7.2",
     "moment": "^2.20.1",
     "react": "^16.2.0",
+    "react-bootstrap-sweetalert": "^4.2.3",
     "react-datepicker": "^1.0.4",
     "react-day-picker": "^7.0.7",
     "react-dom": "^16.2.0",
