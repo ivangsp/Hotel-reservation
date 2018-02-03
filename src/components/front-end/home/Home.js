@@ -7,6 +7,7 @@ import LandingPage from './LandingPage'
 import Rooms from './Rooms'
 import Footer from '../Footer'
 class Home extends Component {
+
     render() {
         console.log('test',this.props.activeTab)
         return (

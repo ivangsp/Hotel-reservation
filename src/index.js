@@ -35,7 +35,7 @@ ReactDOM.render(
             <div>
                 <Route exact path="/" component={Home}/>
                 <Route path="/contact" exact  component={Contact_us} />
-                <Route path="/booking" exact  component={BookingContainer} />
+                <Route path="/booking/:id?" exact  component={BookingContainer} />
                 <Route path="/admin" exact component={AdminContainer} />
             </div>
         </ConnectedRouter>

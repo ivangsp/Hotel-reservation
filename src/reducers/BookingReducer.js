@@ -11,7 +11,24 @@ const BookingReducer = (state = {
     cab:false,
     room:{},
     user:{},
-    paid:false
+    paid:false,
+    rooms:[
+        {'id': 1,
+            'type': 'SINGLE ROOM',
+            'fee': 100
+        },
+
+        {'id': 12,
+            'type': 'DOUBLE ROOM',
+            'fee': 120
+        },
+
+        {'id': 3,
+            'type': 'DELUX ROOM',
+            'fee': 180
+        }
+    ],
+
 }, action) => {
     switch (action.type) {
 

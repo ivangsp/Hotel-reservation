@@ -6,8 +6,6 @@ import Booking from '../components/front-end/booking/Booking'
 const mapStateToProps = (state) => {
     return {
         booking: state.BookingReducer
-        ,
-
 
     };
 };

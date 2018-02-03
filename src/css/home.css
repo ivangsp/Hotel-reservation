@@ -79,3 +79,6 @@ input{
 .bg-light{
     background-color: #ffffff;
 }
+.hotelName{
+    font-family: 'Monoton', cursive;
+}

@@ -41,6 +41,7 @@ class Booking extends Component {
 
     }
 
+
     setActiveTab(tab) {
         switch (tab){
             case 'listing':
@@ -88,10 +89,21 @@ class Booking extends Component {
 
 
     }
+    componentWillMount(){
+        console.log("statet1", this.props.match.params.id);
+        const rooms = this.props.booking.rooms
+        for (const i in rooms ){
+            if(rooms[i].type === this.props.match.params.id){
+               console.log('selected', rooms[i]);
+               this.setState({
+                   rooms: [rooms[i]]
+               })
+            }
+        }
+    }
 
     render() {
-
-
+        console.log("statet", this.props);
         return (
             <div className="mainContainer">
                 <NavBar />
