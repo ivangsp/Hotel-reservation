@@ -29,7 +29,7 @@ class NavBar extends Component{
                             <a   className="nav-link" onClick={() => this.props.changeTab('New orders')}>
                                 <i className="fa fa-shopping-cart" />
                                 <span className="nav-link-text">New Orders
-                                    {this.props.newBooking.paid? <small className="badge">1 New!</small> : null}
+                                    {this.props.newBooking? <small className="badge">1 New!</small> : null}
                                 </span>
                             </a>
                         </li>
