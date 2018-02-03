@@ -30,7 +30,7 @@ class Form extends Component{
             <div className="row personal-details">
                <div className="col-md-12">
                    <div className="row">
-                       <div className="col-md-6">
+                       <div className="col-md-6 col-sm-12">
                            <div className="form-group">
                                <label htmlFor="fname">First Name</label>
                                <input type="text" className="form-control" id="fname"
@@ -38,7 +38,7 @@ class Form extends Component{
                            </div>
                        </div>
 
-                       <div className="col-md-6">
+                       <div className="col-md-6 col-sm-12">
                            <div className="form-group">
                                <label htmlFor="sname">Second Name</label>
                                <input type="text" className="form-control" id="sname"
@@ -48,7 +48,7 @@ class Form extends Component{
                    </div>
 
                    <div className="row">
-                       <div className="col-md-6">
+                       <div className="col-md-6 col-sm-12">
                            <div className="form-group">
                                <label htmlFor="sname">Email Address</label>
                                <input type="email" className="form-control" id="email"
@@ -56,7 +56,7 @@ class Form extends Component{
                            </div>
                        </div>
 
-                       <div className="col-md-6">
+                       <div className="col-md-6 col-sm-12">
                            <div className=" form-group">
                                <label htmlFor="c-email">Confirm Email Address</label>
                                <input type="email" className="form-control" id="c-email"
@@ -66,7 +66,7 @@ class Form extends Component{
                    </div>
 
                    <div className="row">
-                       <div className="col-md-6 form-group">
+                       <div className="col-md-6 col-sm-12 form-group">
                            <label htmlFor="sname">Nationality</label>
                            <select className="form-control" onChange={(e) => this.setState({nationality: e.target.value})}>
                                <option value="uganda">uganda</option>
@@ -76,7 +76,7 @@ class Form extends Component{
                            </select>
                        </div>
 
-                       <div className="col-md-6 form-group">
+                       <div className="col-md-6 col-sm-12 form-group">
                            <label htmlFor="mobile">Mobile No </label>
                            <input type="text" className="form-control" id="mobile" placeholder="+256 789 *** ***"
                                   onChange={(e) => this.setState({phoneNumber: e.target.value})}/>
@@ -84,7 +84,7 @@ class Form extends Component{
                    </div>
 
                    <div className="row">
-                       <div className="col-md-6 form-group" >
+                       <div className="col-md-6  col-sm-12 form-group" >
                            <label htmlFor="sname">Gender</label>
                            <select className="form-control" onChange={(e) => this.setState({gender: e.target.value})}>
                                <option>select Gender</option>
@@ -93,7 +93,7 @@ class Form extends Component{
                            </select>
                        </div>
 
-                       <div className="col-md-6 form-group">
+                       <div className="col-md-6  col-sm-12 form-group">
                            <label htmlFor="srequest">Specila Request</label>
                            <textarea name="" id="srequest" cols="30" rows="3"
                                      onChange={(e) => this.setState({msg: e.target.value})} />
@@ -117,7 +117,7 @@ class Form extends Component{
                    </div>
 
                    <div className="row">
-                       <div className="col-md-3 offset-8">
+                       <div className="col-3 offset-md-7">
 
                            <button className="btn btn-danger btn-bgcolor" onClick={()=>{this.submitUserDetails()}}>
                                Proceed to Payment

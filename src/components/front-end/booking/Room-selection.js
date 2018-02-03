@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import delux from "../../../images/delux-room-small.jpeg"
 
-class Room_Selected extends Component {
+class RoomSelected extends Component {
     constructor(props){
         super(props);
 
@@ -84,4 +84,4 @@ class Room_Selected extends Component {
     }
 }
 
-export default  Room_Selected ;
+export default  RoomSelected ;

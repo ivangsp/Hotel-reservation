@@ -6,7 +6,7 @@ import moment from 'moment';
 import NavBar from '../NavBar';
 import Datepicker from './Datepicker'
 import Footer from '../Footer';
-import Room_Selected from './Room-selection';
+import RoomSelected from './Room-selection';
 import FormSelection from './Form-selection'
 import PersonalDetails from './Personal-details'
 import MakePayment from './MakePayment'
@@ -41,6 +41,19 @@ class Booking extends Component {
 
     }
 
+    componentWillMount(){
+        const rooms = this.props.booking.rooms
+        for (const i in rooms ){
+            if(rooms[i].type === this.props.match.params.id){
+                console.log('selected', rooms[i]);
+                this.setState({
+                    rooms: [rooms[i]]
+                })
+            }
+        }
+    }
+
+
 
     setActiveTab(tab) {
         switch (tab){
@@ -65,7 +78,7 @@ class Booking extends Component {
             case 'listing':
                return <div>
                    {rooms.map((room , key)=>{
-                       return <Room_Selected room={room} key={key} onBook={(value) => this.setActiveTab(value)}
+                       return <RoomSelected room={room} key={key} onBook={(value) => this.setActiveTab(value)}
                        setRoom ={(room) => this.props.setRoom(room)}
                        setCab  = {(cab) => this.props.setCab(cab)}
                        cab = {this.props.booking.cab}/>
@@ -88,18 +101,6 @@ class Booking extends Component {
         }
 
 
-    }
-    componentWillMount(){
-        console.log("statet1", this.props.match.params.id);
-        const rooms = this.props.booking.rooms
-        for (const i in rooms ){
-            if(rooms[i].type === this.props.match.params.id){
-               console.log('selected', rooms[i]);
-               this.setState({
-                   rooms: [rooms[i]]
-               })
-            }
-        }
     }
 
     render() {
@@ -136,7 +137,7 @@ class Booking extends Component {
                                 </div>
 
 
-                                <div className="col-md-2 no-rooms">
+                                <div className="col-2 no-rooms">
                                     <p>CHILDREN
                                         <FormSelection val={0}/>
                                     </p>
@@ -146,9 +147,9 @@ class Booking extends Component {
                             :null}
 
                         <div className="row selection">
-                            <div className="col-md-4"><p><b>1. Room selection</b></p></div>
-                            <div className="col-md-4"><p>2. Booking Details</p></div>
-                            <div className="col-md-4"><p>3. Make Payment</p></div>
+                            <div className="col-4"><p><b>1. Room selection</b></p></div>
+                            <div className="col-4"><p>2. Booking Details</p></div>
+                            <div className="col-4"><p>3. Make Payment</p></div>
                         </div>
 
                         <div className="row mb-3">

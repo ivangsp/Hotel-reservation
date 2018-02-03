@@ -50,7 +50,8 @@ img{
     color: cadetblue;
 }
 .selected-date{
-    background-color: #f7d9d8;
+    background-color: #854141;
+    color: white;
 }
 
 .react-datepicker__input-container
@@ -92,6 +93,7 @@ input{
     background-color: #F9F9F9;
     border: 1px solid #E8DDCB;
     color:#6F6F6F;
+    margin: 0px;
 
 }
 .total-summary

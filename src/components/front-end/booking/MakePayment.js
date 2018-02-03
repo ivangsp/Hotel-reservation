@@ -53,41 +53,41 @@ class MakePayment extends Component{
         return(
             <div>
                 <div className="row ">
-                    <div className="col-md-8 ">
+                    <div className="col-md-8 col-sm-12 ">
                         <InfoWindow title="Pay Now" msg="Thank you!, To complete your reservation, please proceed
                             with payment. please not you have 15minutes to complete the payment else your reservation
                             will be automatically cancelled"/>
+                        <div className="col-12"><p className="col-md-12"><b>choose payment option</b></p></div>
                         <div className="row mt-2">
-                            <p className="col-md-12"><b>choose payment option</b></p>
-                            <div className="col-md-2 form-check" onClick={() => this.changePaymentMethod('mastercard')} >
+                            <div className="col-2 form-check" onClick={() => this.changePaymentMethod('mastercard')} >
                                 <input className="form-check-input" type="radio" id="business" value='2' name="payment" />
                                 <label className="form-check-label" htmlFor="business">
                                     <img src={masterCardImg} alt="pesapal"/>
                                 </label>
                             </div>
 
-                            <div className="col-md-2  form-check" onClick={() => this.changePaymentMethod('visa')}>
+                            <div className="col-2  form-check" onClick={() => this.changePaymentMethod('visa')}>
                                 <input className="form-check-input" type="radio" id="business" name="payment" value='2'/>
                                 <label className="form-check-label" htmlFor="business">
                                     <img src={visaCardImg} alt="pesapal"/>
                                 </label>
                             </div>
 
-                            <div className="col-md-2  form-check" onClick={() => this.changePaymentMethod('mtn')} >
+                            <div className="col-2  form-check" onClick={() => this.changePaymentMethod('mtn')} >
                                 <input className="form-check-input" type="radio" defaultChecked name="payment" value='2'/>
                                 <label className="form-check-label" htmlFor="business">
                                     <img src={mtn} alt="pesapal"/>
                                 </label>
                             </div>
 
-                            <div className="col-md-2  form-check" onClick={() => this.changePaymentMethod('airtel')}>
+                            <div className="col-2  form-check" onClick={() => this.changePaymentMethod('airtel')}>
                                 <input className="form-check-input" type="radio" id="business" name="payment" value='2'/>
                                 <label className="form-check-label" htmlFor="business">
                                     <img src={airtel} alt="airtel money"/>
                                 </label>
                             </div>
 
-                            <div className="col-md-2  form-check" onClick={() => this.changePaymentMethod('ezpesa')}>
+                            <div className="col-2  form-check" onClick={() => this.changePaymentMethod('ezpesa')}>
                                 <input className="form-check-input" type="radio" id="business" value='2' name="payment"/>
                                 <label className="form-check-label" htmlFor="business">
                                     <img src={ezpesaImg} alt="ezpesa"/>
@@ -97,7 +97,7 @@ class MakePayment extends Component{
                         </div>
                         { this.showPayMentDetails()}
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 col-sm-12 ">
                         <PaymentSummary bookingDetails={this.props.bookingDetails} />
                     </div>
                 </div>

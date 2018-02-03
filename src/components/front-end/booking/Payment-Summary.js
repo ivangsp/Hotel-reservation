@@ -24,7 +24,7 @@ class PaymentSummary extends Component{
         return(
             <div className="total-summary">
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="col-12">
                         <h4 className="text-center">SUMMARY</h4>
                     </div>
                 </div>
